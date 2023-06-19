@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 import classes from './MainNavigation.module.css';
 
-const MainNavigation = () => {
+const MainNavigation: React.FC = () => {
   const { navbar, containerLeft, containerRight } = classes;
 
   return (

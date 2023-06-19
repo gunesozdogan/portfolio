@@ -31,7 +31,7 @@
 .containerRight a:active {
   text-decoration: none;
   font-size: 1.8rem;
-  color: #6e07f3;
+  color: #501b1d;
   font-weight: 500;
   cursor: pointer;
   padding: 1rem 2rem;
@@ -44,6 +44,6 @@
 }
 .containerRight a:hover,
 .containerRight a:active {
-  color: #fff;
-  background-color: #6e07f3;
+  color: #e3e2df;
+  background-color: #501b1d;
 }

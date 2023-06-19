@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 4rem;
+  padding: 2rem;
+}
+.container img {
+  border-radius: 8%;
+  height: 30vw;
+  width: auto;
+  min-height: 30rem;
+  max-height: 45rem;
+}
+.container .textContainer {
+  width: 50%;
+  font-size: 1.8rem;
+  padding: 2rem 1rem;
+  border-radius: 2rem;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+.container .textContainer h3 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+.container .textContainer p {
+  width: 100%;
+  margin: 0 auto;
+  line-height: 4rem;
+}
