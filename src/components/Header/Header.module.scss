@@ -1,0 +1,19 @@
+@import '../../styles/variables.scss';
+
+.container {
+  padding-top: 2rem;
+  @include flexbox(center, center, column, 2rem);
+
+  h1 {
+    font-size: 4.5rem;
+    color: $light-main-font-color;
+    letter-spacing: 3px;
+  }
+
+  h3 {
+    font-size: 2rem;
+    color: $light-main-font-color;
+    font-weight: normal;
+    letter-spacing: 0.2px;
+  }
+}

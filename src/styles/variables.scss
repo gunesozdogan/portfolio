@@ -1,0 +1,17 @@
+$light-main-color: #fff;
+$light-secondary-color: #6e07f3;
+// $light-helper-color:
+$light-main-font-color: #222;
+
+$dark-main-color: rgb(15, 23, 42);
+$dark-secondary-color: rgb(226, 232, 240);
+// $dark-helper-color:
+$dark-main-font-color: #fff;
+
+@mixin flexbox($align: center, $justify: center, $direction: row, $gap: 1rem) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+  gap: $gap;
+}

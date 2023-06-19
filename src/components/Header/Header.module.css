@@ -1,0 +1,19 @@
+.container {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.container h1 {
+  font-size: 4.5rem;
+  color: #222;
+  letter-spacing: 3px;
+}
+.container h3 {
+  font-size: 2rem;
+  color: #222;
+  font-weight: normal;
+  letter-spacing: 0.2px;
+}
