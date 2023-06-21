@@ -1,0 +1,43 @@
+.container {
+  padding-top: 4rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto;
+}
+.container .title {
+  color: #141c3a;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.container .description {
+  font-size: 1.8rem;
+  text-align: center;
+  height: 6rem;
+}
+.container .skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2rem;
+  font-size: 2rem;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+}
+.container .skills .skillContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 12rem;
+  height: 12rem;
+}
+.container .skills .skillContainer span {
+  font-weight: 600;
+}

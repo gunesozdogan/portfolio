@@ -11,9 +11,18 @@
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: $light-main-font-color;
     font-weight: normal;
     letter-spacing: 0.2px;
+  }
+
+  img {
+    padding-top: 4rem;
+    border-radius: 8%;
+    height: 20rem;
+    width: auto;
+    min-height: 30rem;
+    max-height: 45rem;
   }
 }

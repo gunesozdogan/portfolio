@@ -1,12 +1,11 @@
 .navbar {
-  height: 10vh;
-  max-height: 20rem;
+  height: 25rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
   gap: 1rem;
-  padding: 1rem;
+  padding: 6rem 6rem;
 }
 
 .containerLeft {
@@ -31,7 +30,7 @@
 .containerRight a:active {
   text-decoration: none;
   font-size: 1.8rem;
-  color: #501b1d;
+  color: #6e07f3;
   font-weight: 500;
   cursor: pointer;
   padding: 1rem 2rem;
@@ -44,6 +43,6 @@
 }
 .containerRight a:hover,
 .containerRight a:active {
-  color: #e3e2df;
-  background-color: #501b1d;
+  color: #fff;
+  background-color: #6e07f3;
 }

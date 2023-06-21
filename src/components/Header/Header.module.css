@@ -8,12 +8,20 @@
 }
 .container h1 {
   font-size: 4.5rem;
-  color: #222;
+  color: #141c3a;
   letter-spacing: 3px;
 }
 .container h3 {
-  font-size: 2rem;
-  color: #222;
+  font-size: 2.5rem;
+  color: #141c3a;
   font-weight: normal;
   letter-spacing: 0.2px;
+}
+.container img {
+  padding-top: 4rem;
+  border-radius: 8%;
+  height: 20rem;
+  width: auto;
+  min-height: 30rem;
+  max-height: 45rem;
 }

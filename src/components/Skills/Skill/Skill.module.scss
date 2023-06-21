@@ -1,0 +1,38 @@
+@import '../../../styles/variables.scss';
+
+.container {
+  padding-top: 4rem;
+  flex: 1;
+  @include flexbox(center, flex-start, column);
+  margin: 0 auto;
+
+  .title {
+    color: $light-main-font-color;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .description {
+    font-size: 1.8rem;
+    text-align: center;
+    height: 6rem;
+  }
+
+  .skills {
+    @include flexbox(center, center, row, 2rem);
+    font-size: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+
+    .skillContainer {
+      @include flexbox(center, center, column, 2rem);
+      width: 12rem;
+      height: 12rem;
+
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}

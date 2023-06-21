@@ -4,17 +4,14 @@
   justify-content: center;
   flex-direction: row;
   gap: 4rem;
-  padding: 2rem;
-}
-.container img {
-  border-radius: 8%;
-  height: 30vw;
-  width: auto;
-  min-height: 30rem;
-  max-height: 45rem;
+  padding: 8rem;
+  background-color: #6e07f3;
+  margin-top: 20rem;
+  position: relative;
+  height: 80rem;
 }
 .container .textContainer {
-  width: 50%;
+  width: 100%;
   font-size: 1.8rem;
   padding: 2rem 1rem;
   border-radius: 2rem;
@@ -29,9 +26,12 @@
 .container .textContainer h3 {
   font-size: 3rem;
   padding-bottom: 1rem;
+  color: #fff;
 }
 .container .textContainer p {
   width: 100%;
   margin: 0 auto;
   line-height: 4rem;
+  font-size: 2.2rem;
+  color: #fff;
 }

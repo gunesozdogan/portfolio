@@ -1,12 +1,12 @@
-$light-main-color: #e3e2df;
-$light-secondary-color: #501b1d;
-// $light-helper-color:
-$light-main-font-color: #222;
+$light-main-color: #fff;
+$light-secondary-color: #6e07f3;
+$light-main-font-color: #141c3a;
+$light-secondary-font-color: #fff;
 
 $dark-main-color: rgb(15, 23, 42);
 $dark-secondary-color: rgb(226, 232, 240);
-// $dark-helper-color:
 $dark-main-font-color: #fff;
+$dark-secondary-font-color: #141c3a;
 
 @mixin flexbox($align: center, $justify: center, $direction: row, $gap: 1rem) {
   display: flex;
