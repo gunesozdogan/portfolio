@@ -1,7 +1,7 @@
 @import '../../styles/variables.scss';
 
 .container {
-  padding-top: 2rem;
+  padding: 2rem 2rem 20rem;
   @include flexbox(center, center, column, 2rem);
 
   h1 {

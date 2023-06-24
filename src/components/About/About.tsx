@@ -1,12 +1,12 @@
-import Image from 'next/image';
-import myPhoto from '../../../public/photo-me.jpg';
-import classes from './About.module.css';
 import Skills from '../Skills/Skills';
+import { SkillType } from '@/pages';
+
+import classes from './About.module.css';
 
 const About: React.FC<{
   skills: {
-    techs: { name: string; icon: string }[];
-    tools: { name: string; icon: string }[];
+    techs: SkillType[];
+    tools: SkillType[];
   };
 }> = ({ skills }) => {
   const { container, textContainer } = classes;

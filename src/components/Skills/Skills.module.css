@@ -1,8 +1,6 @@
 .container {
-  position: absolute;
   background-color: #fff;
   width: 80%;
-  top: 50%;
   border-radius: 2rem;
   display: flex;
   align-items: center;

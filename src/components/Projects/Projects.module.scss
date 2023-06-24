@@ -1,0 +1,76 @@
+@import '../../styles/variables.scss';
+
+.container {
+  padding: 10rem 2rem;
+  width: 100vw;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  padding-bottom: 4rem;
+}
+
+.innerContainer {
+  display: grid;
+  //   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  justify-content: center;
+}
+
+.projectContainer {
+  width: 100%;
+  background-color: $light-secondary-color;
+  @include flexbox(flex-start, center, column, 0);
+  border-radius: 1.5rem;
+}
+
+.projectContainer img {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  filter: brightness(0.75);
+  cursor: pointer;
+}
+
+.projectContainer img:hover {
+  filter: brightness(1);
+}
+
+.lowerContainer {
+  padding: 1rem;
+  @include flexbox(center, space-between);
+  width: 100%;
+}
+
+.projectName {
+  font-size: 2.2rem;
+  color: $dark-main-font-color;
+  font-weight: 500;
+}
+
+.buttonContainer {
+  @include flexbox(center, center);
+}
+
+.repoLink,
+.webLink {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.githubIcon,
+.repoIcon {
+  width: 3rem;
+  height: 3rem;
+  fill: $light-main-color;
+}
+
+.repoIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+}

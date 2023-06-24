@@ -1,12 +1,9 @@
 @import '../../styles/variables.scss';
 
 .container {
-  @include flexbox(center, center, row, 4rem);
+  @include flexbox(center, center, column, 4rem);
   padding: 8rem;
   background-color: $light-secondary-color;
-  margin-top: 20rem;
-  position: relative;
-  height: 80rem;
 
   .textContainer {
     width: 100%;
