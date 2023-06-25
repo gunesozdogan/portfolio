@@ -1,0 +1,12 @@
+@import '../../styles/variables.scss';
+
+.container {
+  @include flexbox(flex-start, center, column, 6rem);
+  padding: 10rem 6rem;
+
+  .title {
+    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+  }
+}

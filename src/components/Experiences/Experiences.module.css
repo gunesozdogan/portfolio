@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6rem;
+  padding: 10rem 6rem;
+}
+.container .title {
+  text-align: center;
+  font-size: 3rem;
+  width: 100%;
+}
