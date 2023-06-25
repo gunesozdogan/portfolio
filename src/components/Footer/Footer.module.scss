@@ -1,0 +1,47 @@
+@import '../../styles/variables.scss';
+
+.footer {
+  @include flexbox(center, flex-start, column);
+  background-color: $light-secondary-color;
+  padding: 2rem;
+
+  .container {
+    @include flexbox(center, center, column);
+    color: $light-secondary-font-color;
+  }
+
+  .title {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .description {
+    font-size: 1.8rem;
+    width: 50%;
+    text-align: center;
+  }
+
+  .email {
+    font-size: 1.6rem;
+  }
+
+  .linkContainer {
+    @include flexbox(flex-start, center, row, 2rem);
+    padding: 2rem;
+
+    .link {
+      width: 3rem;
+      height: 3rem;
+
+      svg {
+        fill: $light-secondary-font-color;
+      }
+    }
+  }
+
+  .info {
+    padding-top: 1rem;
+    font-size: 1.6rem;
+    color: $light-secondary-font-color;
+  }
+}

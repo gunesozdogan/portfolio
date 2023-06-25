@@ -2,6 +2,7 @@ import Header from '@/components/Header/Header';
 import About from '@/components/About/About';
 import Projects from '@/components/Projects/Projects';
 import Experiences from '@/components/Experiences/Experiences';
+import Footer from '@/components/Footer/Footer';
 
 export type ProjectType = {
   name: string;
@@ -36,6 +37,7 @@ const HomePage: React.FC<{
       <About skills={skillsData} />
       <Projects projects={projectsData} />
       <Experiences experiences={experiencesData} />
+      <Footer />
     </>
   );
 };
