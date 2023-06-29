@@ -9,12 +9,12 @@ const Experiences: React.FC<{ experiences: ExperienceType[] }> = ({
   const { container, title } = classes;
 
   return (
-    <div className={container}>
-      <h3 className={title}>Experiences</h3>
+    <section id="experiences" className={container}>
+      <span className={title}>Experiences</span>
       {experiences.map((experience) => (
         <Experience key={experience.name} experience={experience} />
       ))}
-    </div>
+    </section>
   );
 };
 

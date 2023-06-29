@@ -19,8 +19,8 @@ const Projects: React.FC<{
   } = classes;
 
   return (
-    <div className={container}>
-      <h3 className={title}>My Personal Projects</h3>
+    <section id="projects" className={container}>
+      <span className={title}>My Personal Projects</span>
       <div className={innerContainer}>
         {projects.map((project) => (
           <div key={project.name} className={projectContainer}>
@@ -62,7 +62,7 @@ const Projects: React.FC<{
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

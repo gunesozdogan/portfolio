@@ -1,15 +1,20 @@
 .navbar {
-  height: 25rem;
+  height: 15rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
   gap: 1rem;
-  padding: 6rem 6rem;
+  padding: 1rem 3rem;
 }
 
 .containerLeft {
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
 }
 .containerLeft img {
   height: 80%;
@@ -22,7 +27,7 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  gap: 1rem;
+  gap: 4rem;
 }
 .containerRight a:link,
 .containerRight a:visited,
@@ -31,10 +36,8 @@
   text-decoration: none;
   font-size: 1.8rem;
   color: #6e07f3;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
-  padding: 1rem 2rem;
-  border-radius: 1.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,6 +46,14 @@
 }
 .containerRight a:hover,
 .containerRight a:active {
-  color: #fff;
-  background-color: #6e07f3;
+  border-bottom: 2px solid #6e07f3;
+}
+.containerRight button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.containerRight button img {
+  height: 3rem;
+  width: 3rem;
 }

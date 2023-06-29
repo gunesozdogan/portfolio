@@ -12,7 +12,7 @@ const About: React.FC<{
   const { container, textContainer } = classes;
 
   return (
-    <div className={container}>
+    <section id="about" className={container}>
       <div className={textContainer}>
         <h3>Hello I am Güneş. Nice to meet you</h3>
         <p>
@@ -25,7 +25,7 @@ const About: React.FC<{
         </p>
       </div>
       <Skills skillsData={skills} />
-    </div>
+    </section>
   );
 };
 

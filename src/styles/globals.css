@@ -1,10 +1,29 @@
+@font-face {
+  font-family: 'textFontRegular';
+  src: url('../../public/fonts/europa-regular-webfont.woff') format('woff');
+}
+
 :root {
   font-size: 62.5%;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: 'textFontRegular', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Belanosima', sans-serif;
+  font-weight: 600;
 }

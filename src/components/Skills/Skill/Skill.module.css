@@ -39,5 +39,6 @@
   height: 12rem;
 }
 .container .skills .skillContainer span {
-  font-weight: 600;
+  font-weight: normal;
+  font-size: 1.8rem;
 }

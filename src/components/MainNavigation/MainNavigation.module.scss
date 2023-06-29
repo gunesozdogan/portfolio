@@ -1,13 +1,14 @@
 @import '../../styles/variables.scss';
 
 .navbar {
-  height: 25rem;
+  height: 15rem;
   @include flexbox(center, space-between);
-  padding: 6rem 6rem;
+  padding: 1rem 3rem;
 }
 
 .containerLeft {
   height: 100%;
+  @include flexbox(center, center);
 
   img {
     height: 80%;
@@ -17,7 +18,7 @@
 }
 
 .containerRight {
-  @include flexbox(center, space-between);
+  @include flexbox(center, space-between, row, 4rem);
 
   a:link,
   a:visited,
@@ -26,16 +27,24 @@
     text-decoration: none;
     font-size: 1.8rem;
     color: $light-secondary-color;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
-    padding: 1rem 2rem;
-    border-radius: 1.8rem;
     @include flexbox(center, center);
   }
 
   a:hover,
   a:active {
-    color: $light-main-color;
-    background-color: $light-secondary-color;
+    border-bottom: 2px solid $light-secondary-color;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    img {
+      height: 3rem;
+      width: 3rem;
+    }
   }
 }

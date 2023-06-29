@@ -12,12 +12,11 @@ const Footer: React.FC = () => {
     info,
   } = classes;
   return (
-    <footer className={footer}>
+    <footer id="contact" className={footer}>
       <div className={container}>
         <span className={title}>CONTACT ME</span>
         <p className={description}>
-          Feel free to reach out to me. I would love to connect and discuss
-          exciting opportunities!
+          Reach out for collaborations or just a friendly chat!
         </p>
         <span className={email}>gunes.ozdogan95@gmail.com</span>
         <div className={linkContainer}>
