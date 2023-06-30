@@ -79,3 +79,20 @@
 .containerDark svg {
   fill: #fff;
 }
+
+@media (max-width: 800px) {
+  .container,
+  .containerDark {
+    width: 100%;
+  }
+  .container .upperContainer,
+  .containerDark .upperContainer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .container .upperContainer .rightContainer,
+  .containerDark .upperContainer .rightContainer {
+    width: 100%;
+    justify-content: space-between;
+  }
+}

@@ -53,3 +53,22 @@
     filter: invert(1);
   }
 }
+
+@media (max-width: 800px) {
+  .container,
+  .containerDark {
+    .title {
+      padding-bottom: 2rem;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      .skillContainer {
+        width: unset;
+        height: unset;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.light {
+  width: 3rem;
+  height: 3rem;
+}
+.light path {
+  stroke: #6e07f3;
+}
+
+@media (max-width: 800px) {
+  .light {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .light path {
+    stroke: #fff;
+  }
+}

@@ -1,9 +1,18 @@
 @import '../../styles/variables.scss';
 
 .navbar {
-  height: 15rem;
+  height: 10rem;
   @include flexbox(center, space-between);
   padding: 1rem 3rem;
+
+  .menuImage {
+    border: none;
+    color: transparent;
+
+    path {
+      stroke: $light-secondary-color;
+    }
+  }
 }
 
 .containerLeft {
@@ -19,6 +28,16 @@
 
 .containerRight {
   @include flexbox(center, space-between, row, 4rem);
+
+  .linkContainer {
+    background-color: $light-main-color;
+    @include flexbox(center, center, row, 2rem);
+  }
+
+  .menuImage {
+    display: none;
+    cursor: pointer;
+  }
 
   a:link,
   a:visited,
@@ -51,6 +70,15 @@
 
 .navbarDark {
   background-color: $dark-main-color;
+
+  .menuImage {
+    border: none;
+    color: transparent;
+
+    path {
+      stroke: $dark-secondary-color;
+    }
+  }
 }
 
 .containerDark {
@@ -61,8 +89,110 @@
     color: $dark-secondary-color;
   }
 
+  .linkContainer {
+    background-color: $dark-main-color;
+  }
+
   a:hover,
   a:active {
     border-bottom: 2px solid $dark-secondary-color;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    padding: 1rem;
+    position: sticky;
+
+    .menuImage {
+      border: none;
+      color: transparent;
+
+      path {
+        stroke: $light-secondary-color;
+      }
+    }
+  }
+
+  .navbarDark {
+    .menuImage {
+      path {
+        stroke: $dark-secondary-color;
+      }
+    }
+  }
+
+  .containerRight {
+    @include flexbox(flex-end, center, column);
+    position: relative;
+    width: 12rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+
+    .linkContainer {
+      margin-top: 3rem;
+      position: absolute;
+      width: 12rem;
+      top: 0;
+      right: 0;
+      @include flexbox(flex-end, center, column);
+      padding: 1rem;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+
+      a:link,
+      a:visited,
+      a:hover,
+      a:active {
+        color: $light-main-color;
+        font-size: 1.6rem;
+      }
+    }
+
+    .menuImage {
+      display: block;
+    }
+  }
+
+  .containerToggled + .containerRight {
+    background-color: $light-secondary-color;
+
+    .menuImage {
+      path {
+        stroke: $light-main-color;
+      }
+    }
+    .linkContainer {
+      background-color: $light-secondary-color;
+    }
+  }
+
+  .navbarDark {
+    .containerToggled + .containerRight {
+      background-color: $dark-helper-color;
+
+      .menuImage {
+        path {
+          stroke: $dark-secondary-color;
+        }
+      }
+
+      .linkContainer {
+        background-color: $dark-helper-color;
+
+        a:link,
+        a:visited,
+        a:hover,
+        a:active {
+          color: $dark-secondary-color;
+        }
+      }
+    }
+  }
+
+  .linkContainer.hide {
+    display: none;
   }
 }

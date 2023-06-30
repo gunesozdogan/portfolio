@@ -1,0 +1,14 @@
+.dark {
+  width: 3rem;
+  height: 3rem;
+}
+.dark path {
+  stroke: #66fcf1;
+}
+
+@media (max-width: 800px) {
+  .dark {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}

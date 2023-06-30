@@ -1,11 +1,18 @@
 .navbar {
-  height: 15rem;
+  height: 10rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
   gap: 1rem;
   padding: 1rem 3rem;
+}
+.navbar .menuImage {
+  border: none;
+  color: transparent;
+}
+.navbar .menuImage path {
+  stroke: #6e07f3;
 }
 
 .containerLeft {
@@ -28,6 +35,18 @@
   justify-content: space-between;
   flex-direction: row;
   gap: 4rem;
+}
+.containerRight .linkContainer {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2rem;
+}
+.containerRight .menuImage {
+  display: none;
+  cursor: pointer;
 }
 .containerRight a:link,
 .containerRight a:visited,
@@ -61,6 +80,13 @@
 .navbarDark {
   background-color: #0b0c10;
 }
+.navbarDark .menuImage {
+  border: none;
+  color: transparent;
+}
+.navbarDark .menuImage path {
+  stroke: #66fcf1;
+}
 
 .containerDark a:link,
 .containerDark a:visited,
@@ -68,7 +94,92 @@
 .containerDark a:active {
   color: #66fcf1;
 }
+.containerDark .linkContainer {
+  background-color: #0b0c10;
+}
 .containerDark a:hover,
 .containerDark a:active {
   border-bottom: 2px solid #66fcf1;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    padding: 1rem;
+    position: sticky;
+  }
+  .navbar .menuImage {
+    border: none;
+    color: transparent;
+  }
+  .navbar .menuImage path {
+    stroke: #6e07f3;
+  }
+  .navbarDark .menuImage path {
+    stroke: #66fcf1;
+  }
+  .containerRight {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    width: 12rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  .containerRight .linkContainer {
+    margin-top: 3rem;
+    position: absolute;
+    width: 12rem;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  .containerRight .linkContainer a:link,
+  .containerRight .linkContainer a:visited,
+  .containerRight .linkContainer a:hover,
+  .containerRight .linkContainer a:active {
+    color: #fff;
+    font-size: 1.6rem;
+  }
+  .containerRight .menuImage {
+    display: block;
+  }
+  .containerToggled + .containerRight {
+    background-color: #6e07f3;
+  }
+  .containerToggled + .containerRight .menuImage path {
+    stroke: #fff;
+  }
+  .containerToggled + .containerRight .linkContainer {
+    background-color: #6e07f3;
+  }
+  .navbarDark .containerToggled + .containerRight {
+    background-color: #1f2833;
+  }
+  .navbarDark .containerToggled + .containerRight .menuImage path {
+    stroke: #66fcf1;
+  }
+  .navbarDark .containerToggled + .containerRight .linkContainer {
+    background-color: #1f2833;
+  }
+  .navbarDark .containerToggled + .containerRight .linkContainer a:link,
+  .navbarDark .containerToggled + .containerRight .linkContainer a:visited,
+  .navbarDark .containerToggled + .containerRight .linkContainer a:hover,
+  .navbarDark .containerToggled + .containerRight .linkContainer a:active {
+    color: #66fcf1;
+  }
+  .linkContainer.hide {
+    display: none;
+  }
 }

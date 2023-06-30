@@ -66,3 +66,20 @@
     fill: $dark-main-font-color;
   }
 }
+
+@media (max-width: 800px) {
+  .container,
+  .containerDark {
+    width: 100%;
+
+    .upperContainer {
+      align-items: flex-start;
+      flex-direction: column;
+
+      .rightContainer {
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }
+}

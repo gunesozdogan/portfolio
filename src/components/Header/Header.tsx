@@ -1,9 +1,7 @@
 import classes from './Header.module.css';
-import Image from 'next/image';
-import myPhoto from '../../../public/images/photo-me.jpg';
-import myPhotoDark from '../../../public/images/photo-me-dark.jpg';
 import { useSelector } from 'react-redux';
 import { RootState } from '@/store/store';
+import Link from 'next/link';
 
 const Header: React.FC = () => {
   const { container, containerDark } = classes;
@@ -16,7 +14,8 @@ const Header: React.FC = () => {
         Exemplary front-end development skills delivering immersive and
         user-centric web experiences
       </span>
-      <Image src={darkMode ? myPhotoDark : myPhoto} alt="my-photo"></Image>
+      <span>Frontend Developer @ Insider</span>
+      <Link href="#contact">Contact Me</Link>
     </div>
   );
 };

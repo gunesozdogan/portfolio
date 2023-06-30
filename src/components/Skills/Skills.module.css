@@ -29,3 +29,10 @@
 .containerDark .innerContainer {
   gap: 0;
 }
+
+@media (max-width: 800px) {
+  .container,
+  .containerDark {
+    width: 100%;
+  }
+}

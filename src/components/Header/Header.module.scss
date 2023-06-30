@@ -9,6 +9,7 @@
     font-size: 4.5rem;
     color: $light-main-font-color;
     letter-spacing: 3px;
+    text-align: center;
   }
 
   span {
@@ -16,6 +17,14 @@
     color: $light-main-font-color;
     font-weight: normal;
     letter-spacing: 0.2px;
+    text-align: center;
+    width: 80%;
+  }
+
+  span:nth-child(3) {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 2rem;
   }
 
   img {
@@ -25,6 +34,25 @@
     width: auto;
     min-height: 30rem;
     max-height: 45rem;
+  }
+
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    margin-top: 8rem;
+    text-decoration: none;
+    color: $light-main-font-color;
+    padding: 2rem 6rem;
+    font-size: 2rem;
+    background-color: $light-secondary-color;
+    color: $light-secondary-font-color;
+    border-radius: 1rem;
+  }
+
+  a:hover,
+  a:active {
+    filter: brightness(1.2);
   }
 }
 
@@ -37,5 +65,23 @@
 
   span {
     color: $dark-main-font-color;
+  }
+
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    text-decoration: none;
+    color: $dark-main-font-color;
+    background-color: $dark-helper-color;
+  }
+}
+
+@media (max-width: 800px) {
+  .container,
+  .containerDark {
+    span {
+      line-height: 3.5rem;
+    }
   }
 }

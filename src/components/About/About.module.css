@@ -40,3 +40,18 @@
 .containerDark {
   background-color: #1f2833;
 }
+
+@media (max-width: 800px) {
+  .container,
+  .containerDark {
+    padding: 6rem 2rem 12rem;
+  }
+  .container .textContainer h3,
+  .containerDark .textContainer h3 {
+    padding-bottom: 2rem;
+  }
+  .container .textContainer p,
+  .containerDark .textContainer p {
+    font-size: 1.6rem;
+  }
+}

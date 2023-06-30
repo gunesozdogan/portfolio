@@ -21,3 +21,10 @@
     color: $dark-main-font-color;
   }
 }
+
+@media (max-width: 800px) {
+  .container,
+  .containerDark {
+    padding: 6rem 2rem;
+  }
+}

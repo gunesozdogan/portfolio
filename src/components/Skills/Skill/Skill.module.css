@@ -61,3 +61,20 @@
 .containerDark img {
   filter: invert(1);
 }
+
+@media (max-width: 800px) {
+  .container .title,
+  .containerDark .title {
+    padding-bottom: 2rem;
+  }
+  .container .skills,
+  .containerDark .skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .container .skills .skillContainer,
+  .containerDark .skills .skillContainer {
+    width: unset;
+    height: unset;
+  }
+}

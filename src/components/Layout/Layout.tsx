@@ -11,7 +11,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <Head>
-        <title>My Portfolio</title>
+        <title>Güneş Oktay Özdoğan | React & Typescript Developer</title>
         <meta
           name="description"
           content="Browse a huge list of highly active React meetups!"

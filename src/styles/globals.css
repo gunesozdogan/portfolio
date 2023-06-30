@@ -9,6 +9,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 * {
@@ -26,4 +27,13 @@ h5,
 h6 {
   font-family: 'Belanosima', sans-serif;
   font-weight: 600;
+}
+
+@media (max-width: 800px) {
+  * {
+    -webkit-tap-highlight-color: transparent; /* For Safari, iOS, and older Android */
+    -moz-tap-highlight-color: transparent; /* For Firefox */
+    -ms-tap-highlight-color: transparent; /* For Windows Phone */
+    tap-highlight-color: transparent; /* For newer Android versions */
+  }
 }

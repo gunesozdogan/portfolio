@@ -22,3 +22,10 @@
 .containerDark .title {
   color: #fff;
 }
+
+@media (max-width: 800px) {
+  .container,
+  .containerDark {
+    padding: 6rem 2rem;
+  }
+}
