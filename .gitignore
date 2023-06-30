@@ -5,6 +5,11 @@
 /.pnp
 .pnp.js
 
+# data
+skills.js
+experince.js
+projects.js
+
 # testing
 /coverage
 
