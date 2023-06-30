@@ -1,11 +1,15 @@
-import classes from './Projects.module.css';
 import { ProjectType } from '@/pages';
+import { useSelector } from 'react-redux';
+import { RootState } from '@/store/store';
+
+import classes from './Projects.module.css';
 
 const Projects: React.FC<{
   projects: ProjectType[];
 }> = ({ projects }) => {
   const {
     container,
+    containerDark,
     title,
     innerContainer,
     projectContainer,
@@ -18,8 +22,10 @@ const Projects: React.FC<{
     githubIcon,
   } = classes;
 
+  const darkMode = useSelector((state: RootState) => state.darkMode);
+
   return (
-    <section id="projects" className={container}>
+    <section id="projects" className={darkMode ? containerDark : container}>
       <span className={title}>My Personal Projects</span>
       <div className={innerContainer}>
         {projects.map((project) => (

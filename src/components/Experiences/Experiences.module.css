@@ -1,4 +1,5 @@
-.container {
+.container,
+.containerDark {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -6,10 +7,18 @@
   gap: 6rem;
   padding: 10rem 6rem;
 }
-.container .title {
+.container .title,
+.containerDark .title {
   text-align: center;
   font-size: 3rem;
   width: 100%;
   font-weight: bold;
   display: block;
+}
+
+.containerDark {
+  background-color: #0b0c10;
+}
+.containerDark .title {
+  color: #fff;
 }

@@ -1,6 +1,7 @@
 @import '../../styles/variables.scss';
 
-.container {
+.container,
+.containerDark {
   @include flexbox(center, center, column, 4rem);
   padding: 8rem;
   background-color: $light-secondary-color;
@@ -28,4 +29,8 @@
       color: $light-secondary-font-color;
     }
   }
+}
+
+.containerDark {
+  background-color: $dark-helper-color;
 }

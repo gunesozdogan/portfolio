@@ -1,3 +1,6 @@
+import { useSelector } from 'react-redux';
+import { RootState } from '@/store/store';
+
 import classes from './Skill.module.css';
 
 const Skill: React.FC<{
@@ -5,11 +8,20 @@ const Skill: React.FC<{
   descriptionText: string;
   things: { name: string; icon: string }[];
 }> = ({ titleText, descriptionText, things }) => {
-  const { container, title, description, skills, skill, icon, skillContainer } =
-    classes;
+  const {
+    container,
+    containerDark,
+    title,
+    description,
+    skills,
+    skill,
+    icon,
+    skillContainer,
+  } = classes;
 
+  const darkMode = useSelector((state: RootState) => state.darkMode);
   return (
-    <div className={container}>
+    <div className={darkMode ? containerDark : container}>
       <span className={title}>{titleText}</span>
       <p className={description}>{descriptionText}</p>
       <div className={skills}>

@@ -1,10 +1,12 @@
 @import '../../../styles/variables.scss';
 
-.container {
+.container,
+.containerDark {
   padding-top: 4rem;
   flex: 1;
   @include flexbox(center, flex-start, column);
   margin: 0 auto;
+  width: 100%;
 
   .title {
     color: $light-main-font-color;
@@ -35,5 +37,19 @@
         font-size: 1.8rem;
       }
     }
+  }
+}
+
+.containerDark {
+  background-color: $dark-main-color;
+
+  .title,
+  .description,
+  span {
+    color: $dark-main-font-color;
+  }
+
+  img {
+    filter: invert(1);
   }
 }

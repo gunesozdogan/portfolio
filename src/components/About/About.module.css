@@ -1,4 +1,5 @@
-.container {
+.container,
+.containerDark {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -7,7 +8,8 @@
   padding: 8rem;
   background-color: #6e07f3;
 }
-.container .textContainer {
+.container .textContainer,
+.containerDark .textContainer {
   width: 100%;
   font-size: 1.8rem;
   padding: 2rem 1rem;
@@ -20,15 +22,21 @@
   flex-direction: column;
   gap: 1rem;
 }
-.container .textContainer h3 {
+.container .textContainer h3,
+.containerDark .textContainer h3 {
   font-size: 3rem;
   padding-bottom: 1rem;
   color: #fff;
 }
-.container .textContainer p {
+.container .textContainer p,
+.containerDark .textContainer p {
   width: 100%;
   margin: 0 auto;
   line-height: 4rem;
   font-size: 1.8rem;
   color: #fff;
+}
+
+.containerDark {
+  background-color: #1f2833;
 }

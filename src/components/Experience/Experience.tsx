@@ -1,6 +1,8 @@
 import { ExperienceType } from '@/pages';
 import classes from './Experience.module.scss';
 import { useState } from 'react';
+import { RootState } from '@/store/store';
+import { useSelector } from 'react-redux';
 
 const Experience: React.FC<{ experience: ExperienceType }> = ({
   experience,
@@ -13,6 +15,7 @@ const Experience: React.FC<{ experience: ExperienceType }> = ({
 
   const {
     container,
+    containerDark,
     upperContainer,
     leftContainer,
     rightContainer,
@@ -31,8 +34,10 @@ const Experience: React.FC<{ experience: ExperienceType }> = ({
     date: experienceDate,
   } = experience;
 
+  const darkMode = useSelector((state: RootState) => state.darkMode);
+
   return (
-    <div className={container}>
+    <div className={darkMode ? containerDark : container}>
       <div className={upperContainer}>
         <div className={leftContainer}>
           <span className={title}>

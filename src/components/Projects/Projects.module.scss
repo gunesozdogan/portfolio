@@ -1,78 +1,117 @@
 @import '../../styles/variables.scss';
 
-.container {
+.container,
+.containerDark {
   padding: 10rem 6rem;
   width: 100vw;
-}
-
-.title {
-  text-align: center;
-  font-size: 3rem;
-  padding-bottom: 4rem;
-  font-weight: bold;
-  width: 100%;
-  display: block;
-}
-
-.innerContainer {
-  display: grid;
-  //   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-columns: repeat(3, 1fr);
-  gap: 4rem;
-  justify-content: center;
-}
-
-.projectContainer {
-  width: 100%;
-  background-color: $light-secondary-color;
-  @include flexbox(flex-start, center, column, 0);
-  border-radius: 1.5rem;
-}
-
-.projectContainer img {
-  width: 100%;
-  aspect-ratio: 2 / 1;
-  border-top-left-radius: 1.5rem;
-  border-top-right-radius: 1.5rem;
-  filter: brightness(0.75);
   cursor: pointer;
+
+  .title {
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 4rem;
+    font-weight: bold;
+    width: 100%;
+    display: block;
+  }
+
+  .innerContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 4rem;
+    justify-content: center;
+  }
+
+  .projectContainer {
+    width: 100%;
+    background-color: $light-secondary-color;
+    @include flexbox(flex-start, center, column, 0);
+    border-radius: 1.5rem;
+    position: relative;
+  }
+
+  .projectContainer img {
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    border-radius: 1rem;
+    filter: brightness(1);
+    cursor: pointer;
+  }
+
+  .lowerContainer {
+    padding: 1rem;
+    @include flexbox(center, space-between, column, 2rem);
+    width: 100%;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    visibility: hidden;
+  }
+
+  .projectName {
+    font-size: 2.4rem;
+    color: $dark-main-font-color;
+    font-weight: 600;
+  }
+
+  .buttonContainer {
+    @include flexbox(center, center);
+  }
+
+  .repoLink,
+  .webLink {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .githubIcon,
+  .repoIcon {
+    width: 2.4rem;
+    height: 2.4rem;
+    fill: $light-main-color;
+  }
+
+  .repoIcon {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .projectContainer:hover {
+    img {
+      filter: brightness(0.2);
+    }
+
+    .lowerContainer {
+      visibility: visible;
+    }
+  }
 }
 
-.projectContainer img:hover {
-  filter: brightness(1);
+.containerDark {
+  background-color: $dark-main-color;
+
+  .title {
+    color: $dark-main-font-color;
+  }
+
+  .projectContainer {
+    background-color: $dark-helper-color;
+  }
+
+  .projectContainer:hover {
+    svg:hover {
+      fill: $dark-secondary-color;
+    }
+  }
 }
 
-.lowerContainer {
-  padding: 1rem;
-  @include flexbox(center, space-between);
-  width: 100%;
-}
-
-.projectName {
-  font-size: 1.6rem;
-  color: $dark-main-font-color;
-  font-weight: 500;
-}
-
-.buttonContainer {
-  @include flexbox(center, center);
-}
-
-.repoLink,
-.webLink {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.githubIcon,
-.repoIcon {
-  width: 2rem;
-  height: 2rem;
-  fill: $light-main-color;
-}
-
-.repoIcon {
-  width: 1.8rem;
-  height: 1.8rem;
+@media (min-width: 1400px) {
+  .container,
+  .containerDark {
+    .innerContainer {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }

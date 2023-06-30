@@ -1,7 +1,9 @@
 import Skills from '../Skills/Skills';
 import { SkillType } from '@/pages';
+import { RootState } from '@/store/store';
 
 import classes from './About.module.css';
+import { useSelector } from 'react-redux';
 
 const About: React.FC<{
   skills: {
@@ -9,10 +11,11 @@ const About: React.FC<{
     tools: SkillType[];
   };
 }> = ({ skills }) => {
-  const { container, textContainer } = classes;
+  const { container, textContainer, containerDark } = classes;
+  const darkMode = useSelector((state: RootState) => state.darkMode);
 
   return (
-    <section id="about" className={container}>
+    <section id="about" className={darkMode ? containerDark : container}>
       <div className={textContainer}>
         <h3>Hello I am Güneş. Nice to meet you</h3>
         <p>

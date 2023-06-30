@@ -4,10 +4,11 @@ $light-helper-color: #eee;
 $light-main-font-color: #141c3a;
 $light-secondary-font-color: #fff;
 
-$dark-main-color: rgb(15, 23, 42);
-$dark-secondary-color: rgb(226, 232, 240);
+$dark-main-color: #0b0c10;
+$dark-secondary-color: #66fcf1;
 $dark-main-font-color: #fff;
 $dark-secondary-font-color: #141c3a;
+$dark-helper-color: #1f2833;
 
 @mixin flexbox($align: center, $justify: center, $direction: row, $gap: 1rem) {
   display: flex;

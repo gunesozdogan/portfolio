@@ -1,6 +1,7 @@
 @import '../../styles/variables.scss';
 
-.container {
+.container,
+.containerDark {
   @include flexbox(flex-start, center, column, 6rem);
   padding: 10rem 6rem;
 
@@ -10,5 +11,13 @@
     width: 100%;
     font-weight: bold;
     display: block;
+  }
+}
+
+.containerDark {
+  background-color: $dark-main-color;
+
+  .title {
+    color: $dark-main-font-color;
   }
 }

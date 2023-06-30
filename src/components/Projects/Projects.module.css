@@ -1,9 +1,11 @@
-.container {
+.container,
+.containerDark {
   padding: 10rem 6rem;
   width: 100vw;
+  cursor: pointer;
 }
-
-.title {
+.container .title,
+.containerDark .title {
   text-align: center;
   font-size: 3rem;
   padding-bottom: 4rem;
@@ -11,15 +13,15 @@
   width: 100%;
   display: block;
 }
-
-.innerContainer {
+.container .innerContainer,
+.containerDark .innerContainer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   gap: 4rem;
   justify-content: center;
 }
-
-.projectContainer {
+.container .projectContainer,
+.containerDark .projectContainer {
   width: 100%;
   background-color: #6e07f3;
   display: flex;
@@ -28,60 +30,91 @@
   flex-direction: column;
   gap: 0;
   border-radius: 1.5rem;
+  position: relative;
 }
-
-.projectContainer img {
+.container .projectContainer img,
+.containerDark .projectContainer img {
   width: 100%;
   aspect-ratio: 2/1;
-  border-top-left-radius: 1.5rem;
-  border-top-right-radius: 1.5rem;
-  filter: brightness(0.75);
+  border-radius: 1rem;
+  filter: brightness(1);
   cursor: pointer;
 }
-
-.projectContainer img:hover {
-  filter: brightness(1);
-}
-
-.lowerContainer {
+.container .lowerContainer,
+.containerDark .lowerContainer {
   padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row;
-  gap: 1rem;
+  flex-direction: column;
+  gap: 2rem;
   width: 100%;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  visibility: hidden;
 }
-
-.projectName {
-  font-size: 1.6rem;
+.container .projectName,
+.containerDark .projectName {
+  font-size: 2.4rem;
   color: #fff;
-  font-weight: 500;
+  font-weight: 600;
 }
-
-.buttonContainer {
+.container .buttonContainer,
+.containerDark .buttonContainer {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
   gap: 1rem;
 }
-
-.repoLink,
-.webLink {
+.container .repoLink,
+.container .webLink,
+.containerDark .repoLink,
+.containerDark .webLink {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
-
-.githubIcon,
-.repoIcon {
-  width: 2rem;
-  height: 2rem;
+.container .githubIcon,
+.container .repoIcon,
+.containerDark .githubIcon,
+.containerDark .repoIcon {
+  width: 2.4rem;
+  height: 2.4rem;
   fill: #fff;
 }
+.container .repoIcon,
+.containerDark .repoIcon {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+.container .projectContainer:hover img,
+.containerDark .projectContainer:hover img {
+  filter: brightness(0.2);
+}
+.container .projectContainer:hover .lowerContainer,
+.containerDark .projectContainer:hover .lowerContainer {
+  visibility: visible;
+}
 
-.repoIcon {
-  width: 1.8rem;
-  height: 1.8rem;
+.containerDark {
+  background-color: #0b0c10;
+}
+.containerDark .title {
+  color: #fff;
+}
+.containerDark .projectContainer {
+  background-color: #1f2833;
+}
+.containerDark .projectContainer:hover svg:hover {
+  fill: #66fcf1;
+}
+
+@media (min-width: 1400px) {
+  .container .innerContainer,
+  .containerDark .innerContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

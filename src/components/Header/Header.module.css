@@ -1,4 +1,5 @@
-.container {
+.container,
+.containerDark {
   padding: 2rem 2rem 20rem;
   display: flex;
   align-items: center;
@@ -6,22 +7,35 @@
   flex-direction: column;
   gap: 2rem;
 }
-.container h1 {
+.container h1,
+.containerDark h1 {
   font-size: 4.5rem;
   color: #141c3a;
   letter-spacing: 3px;
 }
-.container span {
+.container span,
+.containerDark span {
   font-size: 2.5rem;
   color: #141c3a;
   font-weight: normal;
   letter-spacing: 0.2px;
 }
-.container img {
+.container img,
+.containerDark img {
   padding-top: 4rem;
   border-radius: 8%;
   height: 20rem;
   width: auto;
   min-height: 30rem;
   max-height: 45rem;
+}
+
+.containerDark {
+  background-color: #0b0c10;
+}
+.containerDark h1 {
+  color: #66fcf1;
+}
+.containerDark span {
+  color: #fff;
 }

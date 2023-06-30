@@ -1,6 +1,7 @@
 @import '../../styles/variables.scss';
 
-.container {
+.container,
+.containerDark {
   background: $light-helper-color;
   padding: 2.5rem 4rem;
   border-radius: 2rem;
@@ -55,4 +56,13 @@
   height: 0;
   overflow: hidden;
   pointer-events: none;
+}
+
+.containerDark {
+  background-color: $dark-helper-color;
+  color: $dark-main-font-color;
+
+  svg {
+    fill: $dark-main-font-color;
+  }
 }

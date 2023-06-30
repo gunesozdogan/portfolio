@@ -1,6 +1,7 @@
 @import '../../styles/variables.scss';
 
-.footer {
+.footer,
+.footerDark {
   @include flexbox(center, flex-start, column);
   background-color: $light-secondary-color;
   padding: 2rem;
@@ -44,4 +45,8 @@
     font-size: 1.6rem;
     color: $light-secondary-font-color;
   }
+}
+
+.footerDark {
+  background-color: $dark-helper-color;
 }

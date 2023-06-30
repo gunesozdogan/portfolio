@@ -1,4 +1,5 @@
-.footer {
+.footer,
+.footerDark {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -7,7 +8,8 @@
   background-color: #6e07f3;
   padding: 2rem;
 }
-.footer .container {
+.footer .container,
+.footerDark .container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,19 +17,23 @@
   gap: 1rem;
   color: #fff;
 }
-.footer .title {
+.footer .title,
+.footerDark .title {
   font-size: 2rem;
   font-weight: 600;
 }
-.footer .description {
+.footer .description,
+.footerDark .description {
   font-size: 1.8rem;
   text-align: center;
   padding-bottom: 2rem;
 }
-.footer .email {
+.footer .email,
+.footerDark .email {
   font-size: 1.6rem;
 }
-.footer .linkContainer {
+.footer .linkContainer,
+.footerDark .linkContainer {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -35,15 +41,22 @@
   gap: 2rem;
   padding: 2rem;
 }
-.footer .linkContainer .link {
+.footer .linkContainer .link,
+.footerDark .linkContainer .link {
   width: 3rem;
   height: 3rem;
 }
-.footer .linkContainer .link svg {
+.footer .linkContainer .link svg,
+.footerDark .linkContainer .link svg {
   fill: #fff;
 }
-.footer .info {
+.footer .info,
+.footerDark .info {
   padding-top: 1rem;
   font-size: 1.6rem;
   color: #fff;
+}
+
+.footerDark {
+  background-color: #1f2833;
 }

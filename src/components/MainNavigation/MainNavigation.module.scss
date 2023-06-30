@@ -48,3 +48,21 @@
     }
   }
 }
+
+.navbarDark {
+  background-color: $dark-main-color;
+}
+
+.containerDark {
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: $dark-secondary-color;
+  }
+
+  a:hover,
+  a:active {
+    border-bottom: 2px solid $dark-secondary-color;
+  }
+}

@@ -1,6 +1,7 @@
 @import '../../styles/variables.scss';
 
-.container {
+.container,
+.containerDark {
   padding: 2rem 2rem 20rem;
   @include flexbox(center, center, column, 2rem);
 
@@ -24,5 +25,17 @@
     width: auto;
     min-height: 30rem;
     max-height: 45rem;
+  }
+}
+
+.containerDark {
+  background-color: $dark-main-color;
+
+  h1 {
+    color: $dark-secondary-color;
+  }
+
+  span {
+    color: $dark-main-font-color;
   }
 }

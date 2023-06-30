@@ -57,3 +57,18 @@
   height: 3rem;
   width: 3rem;
 }
+
+.navbarDark {
+  background-color: #0b0c10;
+}
+
+.containerDark a:link,
+.containerDark a:visited,
+.containerDark a:hover,
+.containerDark a:active {
+  color: #66fcf1;
+}
+.containerDark a:hover,
+.containerDark a:active {
+  border-bottom: 2px solid #66fcf1;
+}

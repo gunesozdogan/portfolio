@@ -1,6 +1,7 @@
 @import '../../styles/variables.scss';
 
-.container {
+.container,
+.containerDark {
   background-color: $light-main-color;
   width: 80%;
   border-radius: 2rem;
@@ -12,5 +13,14 @@
   .innerContainer {
     @include flexbox(flex-start, space-around, column);
     width: 100%;
+  }
+}
+
+.containerDark {
+  border: 1px solid $dark-main-color;
+  background-color: $dark-main-color;
+
+  .innerContainer {
+    gap: 0;
   }
 }

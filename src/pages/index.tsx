@@ -81,6 +81,9 @@ export async function getStaticProps() {
       revalidate: 1,
     };
   } catch (err) {
-    console.log(err);
+    return {
+      props: { skillsData: {}, projectsData: [], experiencesData: [] },
+      revalidate: 1,
+    };
   }
 }

@@ -1,4 +1,7 @@
 import Skill from './Skill/Skill';
+import { useSelector } from 'react-redux';
+import { RootState } from '@/store/store';
+
 import classes from './Skills.module.css';
 
 const Skills: React.FC<{
@@ -7,10 +10,11 @@ const Skills: React.FC<{
     tools: { name: string; icon: string }[];
   };
 }> = ({ skillsData }) => {
-  const { container, innerContainer } = classes;
+  const { container, containerDark, innerContainer } = classes;
+  const darkMode = useSelector((state: RootState) => state.darkMode);
 
   return (
-    <div className={container}>
+    <div className={darkMode ? containerDark : container}>
       <div className={innerContainer}>
         <Skill
           titleText="Technologies"

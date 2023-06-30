@@ -1,8 +1,12 @@
+import { useSelector } from 'react-redux';
+import { RootState } from '@/store/store';
+
 import classes from './Footer.module.css';
 
 const Footer: React.FC = () => {
   const {
     footer,
+    footerDark,
     container,
     title,
     description,
@@ -11,8 +15,10 @@ const Footer: React.FC = () => {
     link,
     info,
   } = classes;
+  const darkMode = useSelector((state: RootState) => state.darkMode);
+
   return (
-    <footer id="contact" className={footer}>
+    <footer id="contact" className={darkMode ? footerDark : footer}>
       <div className={container}>
         <span className={title}>CONTACT ME</span>
         <p className={description}>
